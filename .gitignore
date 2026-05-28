@@ -1,0 +1,17 @@
+# Private credentials/location
+config.h
+secrets.h
+*.env
+
+# Arduino build files
+*.bin
+*.elf
+*.hex
+*.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional editor folders
+.vscode/
