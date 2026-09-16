@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PinkLadyZ OLED Emulator</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Crect x='8' y='8' width='48' height='48' fill='none' stroke='%23fff' stroke-width='4'/%3E%3Ccircle cx='24' cy='32' r='4' fill='%23fff'/%3E%3Ccircle cx='40' cy='32' r='4' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">ESP32 + SSD1306 OLED Project</p>
+      <h1>PinkLadyZ OLED Emulator</h1>
+      <p class="intro">
+        Browser-based emulator of the actual 128×64 bitmap scenes from my ESP32 OLED dashboard companion.
+      </p>
+    </section>
+
+    <section class="emulator-card">
+      <div class="oled-frame">
+        <canvas id="oled" width="128" height="64"></canvas>
+      </div>
+
+      <div class="controls">
+        <button data-state="BOOT">Boot</button>
+        <button data-state="DASHBOARD">Dashboard</button>
+        <button data-state="CRUISE_IDLE">Cruise</button>
+        <button data-state="NIGHT_IDLE">Night</button>
+        <button data-state="GARAGE_IDLE">Garage</button>
+        <button data-state="SHUTDOWN">Shutdown</button>
+      </div>
+
+      <div class="toggles">
+        <label><input type="checkbox" id="rainToggle" /> Rain</label>
+        <label><input type="checkbox" id="snowToggle" /> Snow</label>
+        <label><input type="checkbox" id="stormToggle" /> Storm</label>
+      </div>
+    </section>
+
+    <section class="links">
+    <a href="https://github.com/Jessabel-Art/PinkLadyZ-OLED-Display"
+      target="_blank"
+      rel="noreferrer">
+      View GitHub Repository
+    </a>
+
+    <a href="https://jessabel.art/"
+      target="_blank"
+      rel="noreferrer">
+      Return to Portfolio Website
+    </a>
+  </section>
+
+  </main>
+
+  <script src="bitmaps.js"></script>
+  <script src="oled-emulator.js"></script>
+</body>
+</html>
